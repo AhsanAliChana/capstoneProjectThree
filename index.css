@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pointr {
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url(./image/bg-oragnic.jpg);
+    background-size: cover;
+    height: 120vh;
+}
+
+.contant {
+    margin-top: 140px;
+}
+
+.contant h2 {
+    font-size: 80px;
+}
+
+.bkg {
+    color: #FF6924;
+}
+
+.shop {
+    background-color: #FF6924;
+}
+
+.icon {
+    background-color: #AFD199;
+    cursor: pointer;
+}
+
+.iii:hover {
+    background-color: #50882A;
+}
+
+.icon:hover {
+    background-color: #fff;
+}
+
+.bg-bng {
+    background-image: url(./image/h4-bg-section1.png);
+    background-size: cover;
+}
+
+.clr {
+    color: #010148;
+}
+.bor{
+    border: 2px solid #010148;
+}
+.alt:hover {
+    background-color: #FF6924;
+    border: 1px solid #FF6924;
+}
+
+.drop:hover {
+
+    box-shadow: 0 20px 30px rgb(224, 221, 221);
+
+}
+
+.size {
+    font-size: 42px;
+}
+
+.bg-two {
+    background-image: url(./bg2.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.bbgg {
+    background-color: #FDEEE7;
+}
+
+.third-png {
+    background-image: url(./image/third.jpg);
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+}
+.top{
+    margin-top: 150px
+}
+.csr:hover{
+    cursor: text;
+}
+
+
+@media (max-width: 768px){
+    .dolar{
+        width: 500px;
+    }
+}

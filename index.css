@@ -90,8 +90,22 @@
 .csr:hover{
     cursor: text;
 }
-
-
+.bdn{
+    padding: 60px 0;
+    margin-top: 80px;
+}
+.footer{
+    background-image: url(./image/footer\ img.jpg);
+    background-size: cover;
+    height: 450px;
+}
+.ddd {
+   border: 2px solid #FF6924;
+   width: 35px;
+}
+.mtb{
+    margin-top: 70px;
+}
 @media (max-width: 768px){
     .dolar{
         width: 500px;

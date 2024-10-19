@@ -18,7 +18,7 @@
 
 <body>
     <!-- hero-section -->
-    <div class="hero">
+    <div class="hero pb-5">
         <div class="d-none d-md-block">
             <div class="hero-section">
                 <div id="btn" class="py-2">
@@ -43,10 +43,10 @@
                             </div>
                             <div class=" text-white ">
                                 <a class="iii text-white text-decoration-none  fw-medium px-4
-                                  py-5" href="">login</a> |
+                                  py-5" href="./login.page.html">login</a> |
 
 
-                                <a class="iii text-decoration-none text-white  fw-medium px-4 py-5" href="">Register</a>
+                                <a class="iii text-decoration-none text-white  fw-medium px-4 py-5"href="./signup.html">Register</a>
                             </div>
                         </div>
                     </div>
@@ -86,18 +86,28 @@
                         </li>
 
                     </ul>
+
                     <div class="ms-5 pointr d-none d-md-block">
-                        <iconify-icon class="fs-4" icon="mdi-light:heart"></iconify-icon>
-                        <iconify-icon class="fs-4 mx-2" icon="uil:shopping-cart-alt"></iconify-icon>
-                        <iconify-icon class="fs-4 " icon="material-symbols-light:search"></iconify-icon>
-                    </div>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="navbar-nav ms-auto">
+                                <iconify-icon class="fs-4 mt-2" icon="mdi-light:heart"></iconify-icon>
+                                    <a class="nav-link" href="#"><iconify-icon class="fs-4 mx-2"
+                                            icon="uil:shopping-cart-alt"></iconify-icon>(<span class=""
+                                            id="cart-count">0</span>)</a>
+                                    <iconify-icon class="fs-4 mt-2" icon="material-symbols-light:search"></iconify-icon>
+
+                           </div>
+                        </div>
                 </div>
             </div>
         </nav>
+
+
+        
         <!-- Header-Section -->
         <div class="contant container">
             <div class=" text-center row">
-                <div class="col-md-">
+                <div class="fresh">
                     <div class="text-white ">
                         <h2 class="fw-bold">Always Fresh & <span class="bkg">Organic</span> <br> Vegetables</h2>
                     </div>
@@ -272,165 +282,144 @@
 
 
     <div class="container mt-5">
-        <div class="">
-            <h1 class="clr size fw-bold">Trending <span class="bkg">Products</span></h1>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="clr size fw-bold">Trending <span class="bkg">Products</span></h1>
+            </div>
         </div>
     </div>
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>We understand the importance of approaching each work integrally and <br>
+                    believe in the power of simple and easy communication.
+                </p>
+            </div>
 
-
-    <!-- 
-    <div class="container my-3">
-        <div class="row align-items-center"> -->
-    <!-- Text Section -->
-    <!-- <div class="col-md-4">
-                <span>
-                    We understand the importance of approaching each work integrally and believe in the power of simple
-                    and easy communication.
-                </span>
-            </div> -->
-    <!-- Button Section -->
-    <!-- <div class="col-md-8 d-flex justify-content-end">
-                <button class="btn btn-success px-4 py-2 mt-2 me-5">All Products</button>
-                <span class="clr fw-medium  frit mx-2 py- px-4 me-5 mt-2 khan"> Fruits</span>
-                <span class=" me-5 mt-2 frit px-4 py-2">Nature</span>
-                <span class="me-5 mt-2 mx-3">Recipies</span>
-                <span class="me-5 mt-2 mx-3">Vegetable</span>
+            <div class="col-md-6">
+                <button type="button" id="btn" class="btn btn-success border-0  px-3 py-2 fw-bold">All Products</button>
+                <button type="button" id="btn" class="btn  fw-bold aaaa">Fresh Fruits</button>
+                <button type="button" id="btn" class="btn aaaa fw-bold">Nature</button>
+                <button type="button" id="btn" class="btn aaaa fw-bold">Recipies</button>
+                <button type="button" id="btn" class="btn aaaa fw-bold">Vegetable</button>
             </div>
         </div>
-    </div> -->
+    </div>
+    <!-- Add to cart -->
 
-    <div class="container ">
+    <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card mt-4 ">
-                    <div class="bbgg text-center rounded-top">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bbgg text-center">
                         <img class="img-fluid" width="286" src="./image/lemon.png" alt="">
                     </div>
-                    <div class="text-center py-4">
+                    <div class="card-body text-center">
                         <h5 class="clr fw-bold">Fresh Orange</h5>
                         <h6 class="bkg fw-bol">$12.00 – $65.00</h6>
-                        <button id="shop-btn" class="shop py-2 px-4 border-0 text-white fw-bold rounded">Slecet
-                            option</button>
+                        <button class="shop py-2 px-4 border-0 text-white fw-bold rounded add-to-cart-btn">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card mt-4">
-                    <div class="bbgg text-center rounded-top">
-                        <img class=" img-fluid" width="286" src="./image/apple.png" alt="">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bbgg text-center">
+                        <img class="img-fluid" width="286" src="./image/apple.png" alt="">
                     </div>
-                    <div class="text-center py-4">
+                    <div class="card-body text-center">
                         <h5 class="clr fw-bold">Red Apply Envy</h5>
                         <h6 class="bkg"><strike>$24.00</strike> <span class="clr">$18.00</span></h6>
-                        <button id="shop-btn" class="shop py-2 px-3 border-0 text-white fw-bold rounded">Add to
-                            cart</button>
+                        <button class="shop py-2 px-4 border-0 text-white fw-bold rounded add-to-cart-btn">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card mt-4">
-                    <div class="bbgg text-center rounded-top ">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bbgg text-center">
                         <img class="img-fluid" width="286" src="./image/vege.png" alt="">
                     </div>
-                    <div class="text-center py-4">
+                    <div class="card-body text-center">
                         <h5 class="clr fw-bold">Green Bow</h5>
                         <h6 class="bkg">$4.00</h6>
-                        <button id="shop-btn" class="shop py-2 px-3 border-0 text-white fw-bold rounded">Add to
-                            cart</button>
+                        <button class="shop py-2 px-4 border-0 text-white fw-bold rounded add-to-cart-btn">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card mt-4">
-                    <div class="bbgg text-center rounded-top ">
-                        <img class=" img-fluid" width="286" src="./image/orange.png" alt="">
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bbgg text-center">
+                        <img class="img-fluid" width="286" src="./image/orange.png" alt="">
                     </div>
-                    <div class="text-center py-4">
+                    <div class="card-body text-center">
                         <h5 class="clr fw-bold">Organic Lemon</h5>
                         <h6 class="bkg">$12.00</h6>
-                        <button id="shop-btn" class="shop py-2 px-3 border-0 text-white fw-bold rounded">Add to
-                            cart</button>
+                        <button class="shop py-2 px-4 border-0 text-white fw-bold rounded add-to-cart-btn">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
-
-
-
-    <div class="container ">
+    <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card mt-4">
-                    <div class="bbgg text-center rounded-top ">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bbgg text-center">
                         <img class="img-fluid" width="286" src="./image/oragnic carrot.png" alt="">
                     </div>
-                    <div class="text-center py-4">
+                    <div class="card-body text-center">
                         <h5 class="clr fw-bolder">Orgnic Carrot</h5>
                         <h6 class="bkg"><strike>$12.00</strike> <span class="clr">$8.00</span></h6>
-                        <button id="shop-btn" class="shop py-2 px-4 border-0 text-white fw-bold rounded">Slecet
-                            option</button>
+                        <button class="shop py-2 px-4 border-0 text-white fw-bold rounded add-to-cart-btn">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card mt-4">
-                    <div class="bbgg text-center rounded-top ">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bbgg text-center">
                         <img class="img-fluid" width="286" src="./image/orgnic cabbage.png" alt="">
                     </div>
-                    <div class="text-center py-4">
+                    <div class="card-body text-center">
                         <h5 class="clr fw-bold">Organic cabbage</h5>
                         <h6 class="bkg"><strike>$30.00</strike> <span class="clr">$22.00</span></h6>
-                        <button id="shop-btn" class="shop py-2 px-3 border-0 text-white fw-bold rounded">Add to
-                            cart</button>
+                        <button class="shop py-2 px-4 border-0 text-white fw-bold rounded add-to-cart-btn">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card mt-4">
-                    <div class="bbgg text-center rounded-top ">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bbgg text-center">
                         <img class="img-fluid" width="286" src="./image/orgnic patato.png" alt="">
                     </div>
-                    <div class="text-center py-4">
+                    <div class="card-body text-center">
                         <h5 class="clr fw-bold">Organic Patato</h5>
                         <h6 class="bkg">$24.00</h6>
-                        <button id="shop-btn" class="shop py-2 px-3 border-0 text-white fw-bold rounded">Add to
-                            cart</button>
+                        <button class="shop py-2 px-4 border-0 text-white fw-bold rounded add-to-cart-btn">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card mt-4">
-                    <div class="bbgg text-center rounded-top">
-                        <img class=" img-fluid" width="286" src="./image/orgnic peas.png" alt="">
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bbgg text-center">
+                        <img class="img-fluid" width="286" src="./image/orgnic peas.png" alt="">
                     </div>
-                    <div class="text-center py-4">
+                    <div class="card-body text-center">
                         <h5 class="clr fw-bold">Organic Peas</h5>
                         <h6 class="bkg"><strike>$10.00</strike> <span class="clr">$6.00</span></h6>
-                        <button id="shop-btn" class="shop py-2 px-3 border-0 text-white fw-bold rounded">Add to
-                            cart</button>
+                        <button class="shop py-2 px-4 border-0 text-white fw-bold rounded add-to-cart-btn">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
-
 
 
     <div class="third-png mt-5">
@@ -540,8 +529,9 @@
             </div>
 
             <div class="text-center mt-5">
-                <iconify-icon class=" bor bkg rounded-circle bkg fs-6 fw-medium"
+                <iconify-icon class="border py-1 px-1 bkg rounded-circle mt-2"
                     icon="material-symbols-light:stop-rounded"></iconify-icon>
+
 
                 <iconify-icon class=" mx-2 rounded-circle clr fs-6 fw-medium"
                     icon="material-symbols-light:stop-rounded"></iconify-icon>
@@ -706,8 +696,10 @@ What our Clients are Saying
 
 
             <div class="text-center mt-5">
-                <iconify-icon class=" bor bkg rounded-circle bkg fs-6 fw-medium"
+
+                <iconify-icon class="border py-1 px-1 bkg rounded-circle mt-2"
                     icon="material-symbols-light:stop-rounded"></iconify-icon>
+
 
                 <iconify-icon class=" mx-2 rounded-circle clr fs-6 fw-medium"
                     icon="material-symbols-light:stop-rounded"></iconify-icon>
@@ -721,12 +713,12 @@ What our Clients are Saying
 
     <!-- footer-section -->
 
-    <div class="footer  text-white mt-5">
+    <div class="footer text-white mt-5 py-5">
         <div class="container">
             <div class="row">
 
                 <!-- first  -->
-                <div class="col-md-4 col-sm-6 mtb">
+                <div class="col-lg-4 col-md-6 col-sm-6 mtb">
                     <img class="text-white" width="150" src="./image/footer logo.png" alt="">
 
                     <div>
@@ -750,7 +742,7 @@ What our Clients are Saying
 
                 <!-- second -->
 
-                <div class="col-md-3 col-sm-6  mt-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
                     <div class="mtb">
                         <h5 class="fw-bold">Information</h5>
                         <div class="ddd mt-2"></div>
@@ -767,7 +759,7 @@ What our Clients are Saying
                 </div>
 
                 <!-- third  -->
-                <div class="col-md-3 col-sm-6  mt-3">
+                <div class="col-lg-3 col-md-6 col-sm-6  mt-3">
                     <div class="mtb">
                         <h5 class="fw-bold">Categories</h5>
                         <div class="ddd mt-2"></div>
@@ -784,7 +776,7 @@ What our Clients are Saying
                 </div>
 
                 <!-- forth  -->
-                <div class="col-md-2 col-sm-6 mt-3">
+                <div class="col-lg-2 col-md-6 col-sm-6 mt-3">
                     <div class="mtb">
                         <h5 class="fw-bold">My Account</h5>
                         <div class="ddd mt-2"></div>
@@ -806,15 +798,18 @@ What our Clients are Saying
         </div>
     </div>
 
-    <div>
-        <div class="container mt-3">
+        <div class="container mt-3 d-none d-md-block">
+            <div class="row">
             <div class="d-flex justify-content-between">
-                <p class="clr fw-medium">© 2024 Organio – <span class="text-success">CaseThemes</span>. All rights reserved.</p>
-                <img height="22px" src="./image/ftr.png" alt="">
-          
+                <div class="col-md-8">
+                    <p class="clr fw-medium">© 2024 Organio – <span class="text-success">CaseThemes</span>. All rights reserved.</p>
+                </div>
+             <div class="col-md-4">
+                <img height="22px " src="./image/ftr.png" alt="">
+             </div>
             </div>
         </div>
-    </div>
+        </div>
     <script src="./index.js"></script>
 </body>
 

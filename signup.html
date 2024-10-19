@@ -62,7 +62,7 @@
                 <div class="input-group">
                     <button class="border px-5 py-2 text-black fs-6 rounded-start-pill">categeory</button>
                     <input type="text" class="border" aria-label="">
-
+                 
                 </div>
             </div>
 
@@ -85,14 +85,13 @@
 
 
     <!-- navbar -->
-    <section class="dell mt-3">
+    <section class="dell mt-3 py-1">
         <nav class="navbar navbar-expand-lg text-white container  ">
             <div class="container-fluid px-4 py-1 text-white">
 
 
                 <div class="bbb">
-                    <h6 class=""><iconify-icon icon="material-symbols:legend-toggle"></iconify-icon> Browse Categories
-                    </h6>
+                    <a class="iiii text-decoration-none text-white  fw-medium py-4 px-3"href="./signup.html">Browse Categories</a>
                 </div>
 
 
@@ -125,7 +124,7 @@
 
                     </ul>
                     <div class="ms-5  pointr d-none d-md-block">
-                        <h5 class="text-white fw-bold 5">Cart:0-$0.00</h5>
+                        <a class="iiii text-decoration-none text-white  fw-medium py-4 px-3"href="./signup.html">Cart:0-$0.00</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +134,7 @@
     <div class="login-img py-5">
         <div class="container">
             <div class="text-center align-items-center py-5">
-                <h1 class="mt-5 text-white fw-bold size">Sign In</h1>
+                <h1 class="mt-5 text-white fw-bold size">Sign Up</h1>
                 <div class=" text-center align-items-center fw-bold">
                     <p class="text-white text-center">Home |
                         Sign up
@@ -151,43 +150,55 @@
 
     <div class="container">
         <div class="d-flex justify-content-center align-items-center vh-100">
-            <div class=" p-4 shadow px-5 py-5 rounded ">
-                <h3 class="text-center mb-4">Log In To Your Account</h3>
+            <div class=" p-4 shadow  rounded ">
+                <h3 class="text-center mb-4">Create your account</h3>
 
 
-                <form>
-                    <div class="mb-3 input-group">
-                        <span class="input-group-text bg-white">
-                        </span>
-                        <iconify-icon class="color position-absolute text-center  fs-4 mt-2"
+
+                <form onsubmit="return data ()" action="login.page.html " class="mx-5">
+                    <div>
+                        <iconify-icon class="color position-absolute text-center ms-2  fs-4 mt-2"
                             icon="mdi:user"></iconify-icon>
-                        <input type="text" class="form-control py-2 px-5" placeholder="Username">
+                        <input type="text" class="form-control py-2 px-5" placeholder="Username" id="n1">
                     </div>
 
 
-                    <div class="mb-4 input-group">
-                        <span class="input-group-text bg-white">
-                        </span>
-                        <iconify-icon class="color position-absolute text-center  fs-4 mt-2"
+                    <!-- email -->
+                    <div class="my-4">
+                        <iconify-icon class="color position-absolute text-center ms-2 fs-4 mt-2"
+                            icon="ic:outline-email"></iconify-icon>
+                        <input type="email" class="form-control py-2 px-5" placeholder="Email Adress" id="n2">
+                    </div>
+
+
+                    <!-- password -->
+
+                    <div class="my-4">
+                        <iconify-icon class="color position-absolute text-center ms-2 fs-4 mt-2"
                             icon="material-symbols:lock"></iconify-icon>
-                        <input type="password" class="form-control py-2 px-5 " placeholder="Password" required>
+                        <input type="password" class="form-control py-2 px-5" placeholder="Password" id="n3">
                     </div>
-                    <a type="submit" href="./index.html" class="text-center dell text-white fw-bold border-0 py-3 rounded-pill w-100">Log In</a> 
 
 
+
+                    <div class="my-4">
+                        <iconify-icon class="color position-absolute text-center ms-2 fs-4 mt-2"
+                            icon="material-symbols:lock"></iconify-icon>
+                        <input type="password" class="form-control py-2 px-5" placeholder="Confirm Password" id="n4">
+                    </div>
+
+
+                    <button type="submit" class="dell text-white fw-bold border-0 py-3 rounded-pill w-100"
+                        value="Log In">Log In</button>
+                    <hr>
+                    <p class="text-center">Already have an account? <a href="" class="color">Log In</a></p>
                 </form>
-
-                <hr>
-                <div class="text-center mt-3">
-                    <p>New to Organico? <a class="color" href="#">Sign Up</a></p>
-
-                </div>
             </div>
+
         </div>
     </div>
-
     <!-- login-page-footer -->
-    <div class="login-footer pb-3">
+    <div class="login-footer">
         <div class=" d-none d-md-block">
             <div class="container">
                 <div class="login rounded-pill d-flex align-items-center me-5">
